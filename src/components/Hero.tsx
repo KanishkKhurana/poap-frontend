@@ -25,7 +25,7 @@ export default function Hero() {
         <div className='flex flex-col xl:basis-1/2 justfify-center xl:ml-32 xl:mt-24'>
             <div className='text-center xl:text-left'>
                 <h1 className='xl:text-7xl text-3xl font-bold'><span className='tracking-widest'>POVAP</span> is for</h1>
-                <h1 className='xl:text-8xl text-5xl font-bold text-[#11A97D]'><TextTransition className='text-[#11A97D] ' springConfig={presets.stiff}>{TEXTS[index % TEXTS.length]}</TextTransition></h1>
+                <h1 className='xl:text-8xl text-5xl font-bold '><TextTransition className='text-[#11A97D] ' springConfig={presets.stiff}>{TEXTS[index % TEXTS.length]}</TextTransition></h1>
                 <div className='xl:w-3/4 py-4 mx-3 xl:mx-0'>
                     <p className=''>POVAPs are a great way to show off your experiences and connect with other people who have been to the same events. They can also be used to build community and foster belonging. Whether you're a gamer, a crypto enthusiast, or just someone who loves to attend events, POVAP is a great way to commemorate your experiences and make them last a lifetime.</p>
                     </div>
