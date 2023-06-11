@@ -59,7 +59,7 @@ export default function Navbar({ venomConnect }: Props) {
   }, [venomConnect]);
 
   return (
-    <div className='px-3 xl:px-20 py-5 xl:py-12 relative'>
+    <div className='px-3 xl:px-20 py-5 xl:py-12 relative gradient-bg-nav'>
     <nav className='bg-[#6610F2] rounded-full   p-1.5 flex justify-end'>    
         <div className='absolute left-10 xl:left-44 top-1 xl:top-3 w-1/4 xl:w-[10%]'>
             <img src={Logo} alt="Proof of venom attendance protocol" className='' />

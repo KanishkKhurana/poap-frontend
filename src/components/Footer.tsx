@@ -4,6 +4,7 @@ import Logo from "../assets/images/Logo.svg"
 
 export default function Footer() {
   return (
+    <div className='gradient-bg-footer'>
     <footer className="footer p-10 border-t flex justify-center  text-white">
   <div >
     <img src={Logo} alt="" className='w-1/2 xl:w-1/12' />
@@ -18,5 +19,6 @@ export default function Footer() {
     </div>
   </div>
 </footer>
+</div>
   )
 }

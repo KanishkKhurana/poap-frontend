@@ -1,20 +1,16 @@
 import React from 'react'
 import HomeHero from "../assets/images/homeHero.svg"
 
-interface window {
-    my_modal_3: any; // 👈️ turn off type checking
-  }
-
 
 export default function Hero() {
   return (
-    <div className='mt-6 xl:mt-20 text-white flex flex-col xl:flex-row border-b gap-10 xl:gap-0'>
+    <div className='mt-6 xl:mt-20 text-white flex flex-col xl:flex-row border-b gap-10 xl:gap-0 gradient-bg-welcome'>
         <div className='flex flex-col xl:basis-1/2 justfify-center xl:ml-32 xl:mt-24'>
             <div className='text-center xl:text-left'>
                 <h1 className='xl:text-7xl text-3xl font-bold'><span className='tracking-widest'>POVAP</span> is for</h1>
                 <h1 className='xl:text-8xl text-5xl font-bold text-[#11A97D]'>Communities</h1>
                 <div className='xl:w-3/4 py-4'>
-                    <p className=''>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Beatae inventore eos sunt alias tenetur quod, deleniti, libero soluta non aliquid officiis accusantium dolorum esse temporibus doloribus aspernatur, iste labore eveniet!</p>
+                    <p className=''>POVAPs are a great way to show off your experiences and connect with other people who have been to the same events. They can also be used to build community and foster belonging. Whether you're a gamer, a crypto enthusiast, or just someone who loves to attend events, POVAP is a great way to commemorate your experiences and make them last a lifetime.</p>
                     </div>
             </div>
             <div className='flex justify-center xl:justify-start gap-5'>

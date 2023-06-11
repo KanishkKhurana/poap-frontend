@@ -4,7 +4,8 @@ import HomeRegister from "../assets/images/homeRegister.svg"
 
 export default function SearchorRegister() {
   return (
-    <div id="services" className='xl:py-20 text-white flex flex-col xl:flex-row xl:mx-20 mx-3 mt-5 gap-10 xl:gap-44 justify-center'>
+    <div className='gradient-bg-services'>
+    <div id="services" className='xl:py-20 text-white flex flex-col xl:flex-row xl:mx-20 mx-3 mt-5 gap-10 xl:gap-44 justify-center '>
         <div className='xl:basis-1/2'>
             <h1 className='bg-[#11A97D] rounded-full px-3 py-3 font-bold text-center'>Search POAP for your event</h1>
             <div className='bg-[#6610F2] p-3 rounded-xl flex justify-center gap-3 my-5'>
@@ -36,5 +37,7 @@ export default function SearchorRegister() {
             <div className='flex items-center justify-center mt-5'><img src={HomeRegister} alt="POVAP" /></div>
         </div>        
     </div>
+    </div>
+
   )
 }
