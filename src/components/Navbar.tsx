@@ -1,7 +1,8 @@
-import React, {useState, useEffect} from 'react'
+import React, {useState, useEffect, useContext} from 'react'
 import Logo from "../assets/images/Logo.svg"
 import { VenomConnect } from 'venom-connect';
 import { disconnect } from 'process';
+import { VenomContext } from '../context/VenomContext';
 
 
 type Props = {
@@ -9,7 +10,7 @@ type Props = {
   };
 
 export default function Navbar({ venomConnect }: Props) {
-
+    const {currentAccount, setCurrentAccount} = useContext(VenomContext);
 
     const ConnectWallet = async () => {
         if (!venomConnect) return;
@@ -40,11 +41,13 @@ export default function Navbar({ venomConnect }: Props) {
   const onDisconnect = async () => {
     venomProvider?.disconnect();
     setAddress(undefined);
+    setCurrentAccount(undefined);
   };
   // When our provider is ready, we need to get address and balance from.
   const onProviderReady = async (provider: any) => {
     const venomWalletAddress = provider ? await getAddress(provider) : undefined;
     setAddress(venomWalletAddress);
+    setCurrentAccount(venomWalletAddress);
   };
   useEffect(() => {
     // connect event handler
